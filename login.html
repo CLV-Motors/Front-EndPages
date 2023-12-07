@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"> <!--Link bootstrap-->
+    <link rel="stylesheet" href="css_login_criacao.css"> <!--Link CSS específico para a tela de login-->
+    <title>CLVmotors | Login</title>
+</head>
+
+<body>
+
+    <div class="container" id="container"> <!--Container parte de criação vinculado ao js-->
+        <div class="form-container sign-up">
+            <form>
+                <h1>Crie sua conta</h1>
+                
+                <span>Insira seus dados nas caixas abaixo</span>
+                <input type="text" placeholder="CPF">
+                <input type="text" placeholder="Nome Completo">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <input type="date" placeholder="Data de nascimento">
+                <button>Criar conta</button>
+            </form>
+        </div>
+        <div class="form-container sign-in"><!--Container parte de login vinculado ao js-->
+            <form>
+                <h1>Login</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://github.com/LeonardoAmad/CLV-motors" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/leonardo-amad-497958266/" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>Insira seu login e senha</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <a href="index.html" class="btn">Login</a>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Crie sua conta</h1>
+                    <p>Faça Login e fique habilitado para vender e comprar veículos</p>
+                    <button class="hidden" id="login">Fazer Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Criar conta</h1>
+                    <p>Crie sua conta para fazer parte da CLVmotors</p>
+                    <button class="hidden" id="register">Clique aqui</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--funcionamento container-->
+    <script> 
+        const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+    </script>
+
+</body>
+
+</html>

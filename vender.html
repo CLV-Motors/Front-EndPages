@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css_login_criacao.css">
+    <link rel="stylesheet" href="stylevender.css">
+
+    <title>Vender Veículo | CLVmotors</title>
+</head>
+
+<body>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Crie sua conta</h1>
+                
+                <span>Insira seus dados nas caixas abaixo</span>
+                <input type="text" placeholder="CPF">
+                <input type="text" placeholder="Nome Completo">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Senha">
+                <input type="date" placeholder="Data de nascimento">
+                <button>Criar conta</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Começar anúncio</h1>
+                <br>
+                <select class="select">
+                    <option value="">Volkswagen</option>
+                    <option value="new">Fiat</option>
+                    <option value="used">Ford</option>
+                    <option value="used">Honda</option>
+                    <option value="used">Mitsubishi</option>
+                    <option value="used">Chevrolet</option>
+               </select>
+<br>  
+                <select class="select">
+                    <option value="">Jetta GLI</option>
+                    <option value="new">Golf GTI</option>
+                    <option value="used">Gol</option>
+                    <option value="used">Kombi</option>
+                    <option value="used">Fusca</option>
+                    <option value="used">Nivus</option>
+               </select>
+<br>
+               <select class="select">
+                <option value="">2023</option>
+                <option value="new">2022 </option>
+                <option value="used">2021</option>
+                <option value="used">2020</option>
+                <option value="used">2019</option>
+                <option value="used">2018</option>
+                <option value="used">2017</option>
+                <option value="used">2016</option>
+                <option value="used">2015</option>
+                <option value="used">2014</option>
+                <option value="used">2013</option>
+           </select>
+<br>
+           <select class="select">
+                <option value="">2.0 350 TSI GASOLINA GLI DSG</option>
+            </select>
+<br>
+           <select class="select">
+            <option value="">Preto</option>
+            <option value="">Branco</option>
+            <option value="">Cinza</option>
+            <option value="">Azul</option>
+            <option value="">Roxo</option>
+
+
+        </select>
+           
+                <a href="vender2.html" class="btn">Continuar</a>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Crie sua conta</h1>
+                    <p>Faça Login e fique habilitado para vender e comprar veículos</p>
+                    <button class="hidden" id="login">Fazer Login</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <img src="CLVlogotype (2).png">    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const container = document.getElementById('container');
+const registerBtn = document.getElementById('register');
+const loginBtn = document.getElementById('login');
+
+registerBtn.addEventListener('click', () => {
+    container.classList.add("active");
+});
+
+loginBtn.addEventListener('click', () => {
+    container.classList.remove("active");
+});
+    </script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
