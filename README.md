@@ -1,5 +1,3 @@
-# Front-EndPages
-
 <h1 align="center">
   Quick front-end presentation of our project  
 </h1>
